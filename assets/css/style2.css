@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  margin : 0px;
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  color: #707070;
+  /* color: #9F5940; */
+  background-color: #E6FFF5;
+  position: relative;
+  min-height: 100vh;
+}
+h1, h2 {
+	font-weight: bold;
+  font-family: 'Pattaya', sans-serif;
+  /* font-family: 'Pacifico', cursive; */
+  color: #9F523E;
+  text-align: center;
+}
+h2 {
+  font-size: 30px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  padding-top: 60px;
+  position: relative;
+}
+body.catInfo{
+  height: 100vh;
+  /* background-image: url("../img/paws.png"); */
+}
+.header {
+  margin: 20px auto;
+  /* width: 50%; */
+  height: 80px;
+  /* background-color: #AFDBCA; */
+  text-align: center;
+  font-size: 40px;
+  border-radius: 40px;
+}
+.content {
+  /* top: 120px; */
+  width: 80%;
+  margin: 50px auto;
+  margin-bottom: 0px;
+  /* height: 400px; */
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #fff7e1;
+  border: 4px dashed #9F523E;
+  border-radius: 30px;
+  border-left: hidden;
+  border-right: hidden;
+}
+
+.photosColumn {
+  width: 25%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  /* overflow: hidden; */
+}
+.skew {
+  position: relative;
+  overflow: hidden;
+  width: 240px;
+  height: 200px;
+  border-radius: 10px;
+  transform: rotate(3deg);
+  box-shadow: 2px 2px 4px #888;
+  /* border: 3px solid #9F523E; */
+  /* height: 50%; */
+}
+/* .skew > * {
+  width: 110%;
+  position: absolute;
+  transform: skew(2deg) rotate(-2deg);
+} */
+.skew.left{
+  transform: rotate(-3deg);
+}
+.skew img {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: scale(1) translateX(-50%);
+}
+.info {
+  width: 40%;
+  overflow: auto;
+}

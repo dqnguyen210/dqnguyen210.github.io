@@ -5,26 +5,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   	<link rel="stylesheet" href="assets/css/style.css">
   	<script src="assets/js/script.js"></script>
-    <!-- <script type="text/javascript" src="https://rawgit.com/peterhry/CircleType/master/dist/circletype.min.js"></script> -->
-    <script src="dist/circletype.min.js"></script>
-<!-- <meta charset="UTF-8"> -->
+    <!-- <script src="./CircleType/dist/circletype.min.js"></script> -->
+    <script type="text/javascript" src="https://rawgit.com/peterhry/CircleType/master/dist/circletype.min.js"></script>
+    <meta charset="UTF-8">
   	<title>My Paw Friends</title>
   </head>
 
   <body>
       <section id="welcome">
-        <div>
+        <!-- <div> -->
           <h1 id="title">My Paw Friends</h1>
-        </div>
+          <script>
+             const title = new CircleType(document.getElementById('title'));
+             title.radius(400);
+          </script>
+        <!-- </div> -->
         <div id="pet-container">
-          <div id="pet1" class="pet"><img src="./assets/img/mini.jpg" alt="Mini cat"></div>
+          <div id="pet1" class="pet"><a href="./mini.html"><img src="./assets/img/mini.jpg" alt="Mini cat"></a></div>
           <div id="pet2" class="pet"><img src="./assets/img/tina.jpg" alt="Tina cat"></div>
         </div>
         <div id="arrow-down"><a href="#about"><span></span>Scroll</a></div>
       </section>
 
       <section id="about">
-        <!-- <h1>About</h1> -->
         <div class="bubble">
           <div id="avatar"><img src="./assets/img/avatar.jpg" alt="Avatar"></div>
           <p><br>This site serves as a place to keep my memories. I keep this love in a website!
@@ -34,7 +37,6 @@
         </p>
         </div>
       </section>
-      <!-- $('#title').circleType({radius:200}); -->
   </body>
 
 </html>

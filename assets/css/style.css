@@ -3,20 +3,22 @@
   box-sizing: border-box;
 }
 html, body {
-  /* height: 100%; */
+  height: 100%;
   margin : 0px;
   font-family: 'Karla', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   color: #707070;
   /* color: #9F5940; */
   background-color: #E6FFF5;
   position: relative;
+  flex-direction: column;
   min-height: 100vh;
 }
 h1 {
 	font-weight: bold;
-  /* font-family: 'Pattaya', sans-serif; */
-  font-family: 'Pacifico', cursive;
+  font-family: 'Pattaya', sans-serif;
+  color: #9F523E;
+  /* font-family: 'Pacifico', cursive; */
 }
 a {
   color: inherit;
@@ -37,8 +39,8 @@ a {
   background-color: #AFDBCA;
 }
 #title {
-  padding-top: 40px;
-  font-size: 50px;
+  padding-top: 20px;
+  font-size: 70px;
 }
 #pet-container {
   display: flex;
@@ -56,11 +58,12 @@ a {
   margin: 20px;
   /* max-width: 50%; */
   max-height: 100%;
+  transform: scale(0.9);
   /* min-height: 100%; */
 }
 .pet:hover {
   opacity: 90%;
-  transform: scale(1.1);
+  transform: scale(1);
 }
 /* Scroll down arrow */
 a span {
@@ -87,7 +90,7 @@ a span {
   }
 }
 /* SECOND VIEW */
-#about{
+#about, .catInfo{
   height: 100vh;
   margin-top: 20px;
   background-image: url("../img/paws.png");
@@ -128,8 +131,8 @@ a span {
 #avatar {
   /* display: inline-block; */
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   overflow: hidden;
   border-radius: 50%;
 }
@@ -138,4 +141,44 @@ a span {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+}
+.skew img {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: scale(.7) translateX(-50%);
+}
+
+/* THIRD VIEWs */
+.content {
+  position: relative;
+  top: 70px;
+  width: 80%;
+  height: 400px;
+  background-color: #fff7e1;
+  border: 4px dashed #9F523E;
+  border-left: hidden;
+  border-right: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.photosColumn {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+.skew {
+  position: relative;
+  overflow: hidden;
+  height: 50%;
+  padding-bottom: 5px;
+}
+.info {
+  width: 45%;
 }
