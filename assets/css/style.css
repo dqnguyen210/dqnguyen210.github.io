@@ -56,10 +56,8 @@ a {
 .pet {
   /* display: inline; */
   margin: 20px;
-  /* max-width: 50%; */
   max-height: 100%;
   transform: scale(0.9);
-  /* min-height: 100%; */
 }
 .pet:hover {
   opacity: 90%;
@@ -131,10 +129,11 @@ a span {
 #avatar {
   /* display: inline-block; */
   position: relative;
-  width: 70px;
-  height: 70px;
+  width: 75px;
+  height: 75px;
   overflow: hidden;
   border-radius: 50%;
+  animation: shaking 3s linear 0s infinite;
 }
 #avatar img {
     height: 100%;
@@ -142,43 +141,20 @@ a span {
     left: 50%;
     transform: translateX(-50%);
 }
-.skew img {
-  height: 100%;
-  position: absolute;
-  left: 50%;
-  transform: scale(.7) translateX(-50%);
-}
-
-/* THIRD VIEWs */
-.content {
-  position: relative;
-  top: 70px;
-  width: 80%;
-  height: 400px;
-  background-color: #fff7e1;
-  border: 4px dashed #9F523E;
-  border-left: hidden;
-  border-right: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.photosColumn {
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  overflow: hidden;
-}
-.skew {
-  position: relative;
-  overflow: hidden;
-  height: 50%;
-  padding-bottom: 5px;
-}
-.info {
-  width: 45%;
+@keyframes shaking {
+  0% {
+    transform: rotate(-5deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
 }
