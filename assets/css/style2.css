@@ -1,12 +1,12 @@
 * {
-  margin: 0;
+  margin: 0px;
   box-sizing: border-box;
 }
 html, body {
   height: 100%;
-  margin : 0px;
-  font-family: 'Karla', sans-serif;
-  font-size: 18px;
+  /* margin : 0px; */
+  font-family: 'Lora', serif;
+  font-size: 16px;
   color: #707070;
   /* color: #9F5940; */
   background-color: #E6FFF5;
@@ -16,7 +16,6 @@ html, body {
 h1, h2 {
 	font-weight: bold;
   font-family: 'Pattaya', sans-serif;
-  /* font-family: 'Pacifico', cursive; */
   color: #9F523E;
   text-align: center;
 }
@@ -29,24 +28,18 @@ a {
   padding-top: 60px;
   position: relative;
 }
-body.catInfo{
-  height: 100vh;
-  /* background-image: url("../img/paws.png"); */
-}
+
 .header {
   margin: 20px auto;
-  /* width: 50%; */
   height: 80px;
-  /* background-color: #AFDBCA; */
   text-align: center;
   font-size: 40px;
   border-radius: 40px;
 }
 .content {
-  /* top: 120px; */
   width: 80%;
-  margin: 50px auto;
-  margin-bottom: 0px;
+  margin: 40px auto;
+  margin-bottom: 20px;
   /* height: 400px; */
   position: relative;
 
@@ -62,7 +55,7 @@ body.catInfo{
 }
 
 .photosColumn {
-  width: 25%;
+  /* width: 25%; */
   height: 400px;
   display: flex;
   flex-direction: column;
@@ -79,14 +72,7 @@ body.catInfo{
   border-radius: 10px;
   transform: rotate(3deg);
   box-shadow: 2px 2px 4px #888;
-  /* border: 3px solid #9F523E; */
-  /* height: 50%; */
 }
-/* .skew > * {
-  width: 110%;
-  position: absolute;
-  transform: skew(2deg) rotate(-2deg);
-} */
 .skew.left{
   transform: rotate(-3deg);
 }
@@ -97,6 +83,7 @@ body.catInfo{
   transform: scale(1) translateX(-50%);
 }
 .info {
-  width: 40%;
+  width: 42%;
   overflow: auto;
+  margin: 20px;
 }
